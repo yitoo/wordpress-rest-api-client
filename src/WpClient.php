@@ -49,9 +49,9 @@ class WpClient
      * @param ClientInterface $httpClient
      * @param string $wordpressUrl
      */
-    public function __construct(ClientInterface $httpClient, $wordpressUrl = '')
+    public function __construct($wordpressUrl = '')
     {
-        $this->httpClient = $httpClient;
+        $this->httpClient = new GuzzleAdapter(new GuzzleHttp\Client());
         $this->wordpressUrl = $wordpressUrl;
     }
 
