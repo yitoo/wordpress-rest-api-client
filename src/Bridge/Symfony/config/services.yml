@@ -1,5 +1,5 @@
 services:
     yitoo_wp_client:
-        class: Yitoo\WPClient\WpClient
+        class: Vnn\WpApiClient\WpClient
         arguments:
             - '%yitoo_wp_client.api_host%'
