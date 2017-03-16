@@ -2,8 +2,10 @@
 
 namespace Vnn\WpApiClient;
 
+use GuzzleHttp\Client;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
+use SensioLabs\Security\Exception\RuntimeException;
 use Vnn\WpApiClient\Auth\AuthInterface;
 use Vnn\WpApiClient\Endpoint;
 use Vnn\WpApiClient\Http\ClientInterface;
@@ -51,7 +53,7 @@ class WpClient
      */
     public function __construct($wordpressUrl = '')
     {
-        $this->httpClient = new GuzzleAdapter(new GuzzleHttp\Client());
+        $this->httpClient = new GuzzleAdapter(new Client());
         $this->wordpressUrl = $wordpressUrl;
     }
 

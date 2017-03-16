@@ -2,13 +2,11 @@
 
 namespace Yitoo\WPClient\Bridge\Symfony;
 
-use PMD\Ingredient\Bridge\Symfony\DependencyInjection\PMDIngredientExtension;
+use Yitoo\WPClient\Bridge\Symfony\DependencyInjection\YitooWPClientExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-/**
- * Class PMDIngredientBundle.
- */
+
 class YitooWPClientBundle extends Bundle
 {
     /**

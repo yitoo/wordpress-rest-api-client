@@ -1,8 +1,8 @@
 {
-  "name": "vnn/wordpress-rest-api-client",
+  "name": "yitoo/wp-client",
   "autoload": {
     "psr-4": {
-      "Yitoo\\WpClient\\": "src/",
+      "Yitoo\\WPClient\\": "src/",
       "Vnn\\WpApiClient\\": "src/"
     }
   },
