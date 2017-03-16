@@ -9,6 +9,7 @@ use SensioLabs\Security\Exception\RuntimeException;
 use Vnn\WpApiClient\Auth\AuthInterface;
 use Vnn\WpApiClient\Endpoint;
 use Vnn\WpApiClient\Http\ClientInterface;
+use Vnn\WpApiClient\Http\GuzzleAdapter;
 
 /**
  * Class WpClient
